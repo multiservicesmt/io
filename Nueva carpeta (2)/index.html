@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Multiservices MT</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar ul li a.active {
+            text-decoration: underline;
+        }
+
+        /* Sección ¿Quiénes somos? */
+        .quienes-somos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #e6f4ec; /* Verde formal suave */
+}
+
+
+        .quienes-somos-imagen img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .quienes-somos-texto {
+            max-width: 600px;
+            margin-left: 30px;
+        }
+
+        .quienes-somos-texto h2 {
+            margin-bottom: 15px;
+        }
+
+        .quienes-somos-texto ul {
+            padding-left: 20px;
+        }
+
+        .btn-verde {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #62bb46;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Sección Servicios */
+        .servicios {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .servicio-card {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .servicio-card:hover {
+            transform: translateY(-5px);
+            background-color: #e0ffe0;
+        }
+
+        .contacto-informacion {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .contacto-card {
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .icono-contacto {
+            width: 50px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #004d40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+        <img src="logo.mt.png" alt="Logo MT Multiservices" class="logo">
+        <h2 class="titulo">MT Multiservices</h2>
+    </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#contacto" class="active">Contacto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
+        <h2 class="bienvenido">Bienvenidos</h2>
+    </header>
+
+    <main>
+
+        <!-- Sección ¿Quiénes somos? -->
+        <section id="quienes-somos" class="quienes-somos">
+            <div class="quienes-somos-imagen">
+                <img src="foto.jpg" alt="Nosotros">
+            </div>
+            <div class="quienes-somos-texto">
+                <h2>¿Quiénes somos?</h2>
+                <p>Nos especializamos en brindar soluciones integrales en taxes, contabilidad, inmigración entre otros.Con un enfoque dedicado a la comunidad latina en Estados Unidos. Nuestro compromiso es ofrecer un servicio confiable, accesible y en español e ingles.</p>
+                 <p>Nuestra misión es ayudarte a alcanzar estabilidad financiera y legal, brindándote tranquilidad y confianza a través de un servicio cercano, honesto y profesional.</p>
+                <a href="#servicios" class="btn-verde">Servicios</a>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+        <div class="servicio-card">
+            <img src="pasaporte.png" alt="Inmigración" class="icono-servicio">
+            <h3>Formularios de Inmigración</h3>
+            <p>Asistencia profesional en la preparación y presentación de formularios para procesos migratorios.</p>
+        </div>
+        <div class="servicio-card">
+            <img src="icon-negocios.png" alt="Registro de negocios" class="icono-servicio">
+            <h3>Registro de Negocios</h3>
+            <p>Te ayudamos a formalizar tu negocio de forma eficiente y sin complicaciones legales.</p>
+        </div>
+        <div class="servicio-card">
+            <img src="icon-licencias.png" alt="Licencias de negocios" class="icono-servicio">
+            <h3>Licencias de Negocios</h3>
+            <p>Tramitamos las licencias necesarias para que tu negocio opere legalmente.</p>
+        </div>
+        <div class="servicio-card">
+            <img src="icon-impuestos.png" alt="Impuestos" class="icono-servicio">
+            <h3>Preparación de Impuestos</h3>
+            <p>Declaración de impuestos personales y comerciales de manera precisa y profesional.</p>
+        </div>
+        <div class="servicio-card">
+            <img src="icon-contabilidad.png" alt="Contabilidad" class="icono-servicio">
+            <h3>Servicios Contables / Bookkeeping</h3>
+            <p>Registro, control y análisis de las finanzas de tu empresa para mantener una contabilidad clara.</p>
+        </div>
+    </div>
+</section>
+
+</div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <div class="contacto-informacion">
+                <div class="contacto-card">
+                    <img src="casa.png" alt="Dirección" class="icono-contacto">
+                    <h3>Dirección</h3>
+                    <p>283 Constitution Dr One Columbus Center, Ste 647 Virginia Beach, Virginia 23462</p>
+                </div>
+                <div class="contacto-card">
+                    <img src="telefono.png" alt="Teléfono" class="icono-contacto">
+                    <h3>Teléfonos</h3>
+                    <p>+1 (757) 287-8932</p>
+                </div>
+                <div class="contacto-card">
+                    <img src="email.png" alt="Correo" class="icono-contacto">
+                    <h3>Email</h3>
+                    <p>mtmultiservices2024@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/multiservicesmt/" target="_blank">
+            <img src="instagram.ico" alt="Instagram" width="25px">
+        </a>
+        <p>© 2025 MT Multiservices - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        const secciones = document.querySelectorAll("section[id]");
+        const enlaces = document.querySelectorAll("nav ul li a");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute("id");
+                const link = document.querySelector(`nav ul li a[href="#${id}"]`);
+                if (entry.isIntersecting) {
+                    enlaces.forEach(el => el.classList.remove("active"));
+                    if (link) link.classList.add("active");
+                }
+            });
+        }, {
+            threshold: 0.6
+        });
+
+        secciones.forEach(seccion => observer.observe(seccion));
+    </script>
+
+</body>
+</html>
